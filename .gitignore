@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.pem
+*.cer
+*.key
+.DS_Store
+
+backend/data/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+.next/
+*.tsbuildinfo

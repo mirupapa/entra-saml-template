@@ -1,0 +1,3 @@
+CREATE TABLE common_admins(user_id TEXT PRIMARY KEY REFERENCES users(id));
+CREATE TABLE audit_log(id INTEGER PRIMARY KEY AUTOINCREMENT,tenant_id TEXT NOT NULL,actor_id TEXT NOT NULL REFERENCES users(id),target_id TEXT,action TEXT NOT NULL,details TEXT NOT NULL,created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP);
+INSERT INTO schema_migrations(version) VALUES(2);

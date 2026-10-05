@@ -1,0 +1,30 @@
+{
+  "name": "saml-expo-sample",
+  "version": "1.0.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "node scripts/expo.cjs start --dev-client",
+    "ios": "node scripts/expo.cjs run:ios",
+    "android": "node scripts/expo.cjs run:android",
+    "typecheck": "tsc --noEmit",
+    "export": "node scripts/expo.cjs export --platform ios --platform android"
+  },
+  "dependencies": {
+    "expo": "~57.0.26",
+    "expo-crypto": "~57.0.3",
+    "expo-dev-client": "~57.0.19",
+    "expo-secure-store": "~57.0.4",
+    "expo-status-bar": "~57.0.1",
+    "expo-web-browser": "~57.0.3",
+    "react": "19.2.3",
+    "react-native": "0.86.3"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.0",
+    "typescript": "~5.9.2"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

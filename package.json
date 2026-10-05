@@ -1,0 +1,31 @@
+{
+  "name": "entra-saml-sample",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "next-web"
+  ],
+  "scripts": {
+    "dev": "concurrently -k \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "build": "npm run build --workspaces",
+    "test": "npm run test -w backend",
+    "mobile": "npm --prefix mobile start",
+    "mobile:ios": "npm --prefix mobile run ios",
+    "mobile:android": "npm --prefix mobile run android",
+    "next:dev": "npm run dev -w next-web",
+    "next:build": "npm run build -w next-web"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/express": "^5.0.6",
+    "@types/express-session": "^1.19.0",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "concurrently": "^9.2.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "xml-crypto": "^6.3.2"
+  }
+}

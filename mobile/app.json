@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "SAML Login Sample",
+    "slug": "saml-expo-sample",
+    "scheme": "samlsample",
+    "version": "1.0.0",
+    "ios": { "bundleIdentifier": "com.example.samlsample" },
+    "android": { "package": "com.example.samlsample" },
+    "plugins": ["expo-secure-store", "expo-web-browser"]
+  }
+}

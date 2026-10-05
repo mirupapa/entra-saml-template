@@ -1,0 +1,1 @@
+{"name":"saml-next-web","private":true,"scripts":{"dev":"next dev --port 3100 --webpack","build":"next build --webpack","start":"next start --port 3100","test":"node --import tsx --test lib/*.test.ts"},"dependencies":{"next":"latest","react":"^19.2.0","react-dom":"^19.2.0","@node-saml/node-saml":"^5.1.0","better-sqlite3":"^11.0.0","@xmldom/xmldom":"^0.9.12","xpath":"^0.0.34"}}
